@@ -2,7 +2,8 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 3000,
     mongoose = require('mongoose'),
-    User = require('./api/models/Model'),
+    User = require('./api/models/UserModel'),
+    Image = require('./api/models/ImageModel'),
     bodyParser = require('body-parser');
 
 const db = require('./config/db');
