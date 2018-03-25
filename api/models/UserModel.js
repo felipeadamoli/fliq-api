@@ -5,7 +5,7 @@ var UserSchema = new Schema({
     name:  String,
     email: String,
     password: String,
-    collections: [{ url: String, id: Schema.Types.ObjectId }]
+    collections: [String]
 });
 
 module.exports = mongoose.model('Users', UserSchema);

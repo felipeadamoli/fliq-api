@@ -4,6 +4,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
     User = require('./api/models/UserModel'),
     Image = require('./api/models/ImageModel'),
+    Category = require('./api/models/CategoryModel'),
     bodyParser = require('body-parser');
 
 const db = require('./config/db');

@@ -1,6 +1,7 @@
 module.exports = function(app) {
     var user = require('../controllers/UserController');
     var image = require('../controllers/ImageController');
+    var category = require('../controllers/CategoryController');
 
     app.route('/users')
       .get(user.list_all_users)
@@ -19,4 +20,8 @@ module.exports = function(app) {
       .get(image.read_a_image)
       .put(image.update_a_image)
       .delete(image.delete_a_image);
+
+    app.route('/category')
+      .get(category.list_all_categories)
+      .post(category.create_category);
 };
